@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Webapplikasjoner Oblig2</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header class="main-header">
+        <h1 class="logo">HIOF</h1>
+        <h1>User user</h1>
+    </header>
+
+    <main class="main-content">
+
+        <button class="todo-button" id="todoBtn">+ Todo</button>
+
+        <div id="todoModal" class="modal">
+
+            <div class="modal-box">
+
+                <div class="modal-header">
+                    <h2>New Todo</h2>
+                    <span class="close">&times;</span>
+                </div>
+
+                <div class="modal-content">
+
+                    <label for="mTitle">Tittle</label><br>
+                    <input type="text" id="mTitle" name="mTitle"><br>
+
+                    <label for="mDescription">Description <span class="mLeft">(<span id="charLeft">30</span> characters left)</span></label><br>
+                    <input type="text" id="mDescription" name="mDescription"><br>
+
+                    <label for="mAuthor">Author</label><br>
+                    <input type="text" id="mAuthor" name="mAuthor"><br>
+
+                    <button class="mButton" id="modalCreate">Create</button>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="todo-flex" id="todoContainer">
+
+        </div>
+
+        
+        <div class="todo-history">
+            <div class="history-header">
+                <h2>Completed todos</h2>
+                <div class="history-checkbox">
+                    <input type="checkbox" id="todo-filter" name="todo-filter" value="Filter">
+                    <label for="todo-filter">Filter by date</label>
+                </div>
+            </div>
+
+
+            <table class="history-table" id="todoTable">
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Description</th>
+                    <th>Completed date</th>
+                </tr>
+            </table>
+        </div>
+
+    </main>
+
+</body>
+
+</html>

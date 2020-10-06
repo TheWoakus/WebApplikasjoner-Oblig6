@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap");
+
+body {
+  width: 100%;
+  margin: 0;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 6px 10px #00000019;
+  opacity: 1;
+}
+
+.navbar-h1 {
+  padding: 5px 30px;
+  font: normal normal 900 20px/27px "Nunito";
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+}
+
+.navbar-p {
+  padding: 0 30px;
+  font: normal normal 400 20px/27px "Nunito";
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+}
+
+.todo-button {
+  margin: 80px 220px;
+  padding: 10px 50px;
+  font: normal normal 400 23px/32px "Nunito";
+  letter-spacing: 0px;
+  color: #2d2f39;
+  background: white;
+  border: 1px solid #333333;
+}
+
+.todo-cardlist {
+  margin: 70px 220px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+
+.todo-cardlist h2 {
+  font: normal normal 700 16px/22px "Nunito";
+}
+
+.todo-card {
+  margin-right: 50px;
+  padding: 1em;
+  width: 28%;
+  height: 160px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 8px 16px #5dd3d829;
+  border-radius: 8px;
+}
+
+.todo-card h2 {
+  font: normal normal 700 16px/22px "Nunito";
+  letter-spacing: 0px;
+  color: #333333;
+}
+
+.todo-card p {
+  font: normal normal 400 14px/19px "Nunito";
+  letter-spacing: 0px;
+  color: #333333;
+  height: 40%;
+}
+
+.todo-button-box {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.todo-card button {
+  min-width: 25%;
+  height: 30px;
+  border-radius: 5px;
+  border-color: transparent;
+  font: normal normal 700 13px/15px "Nunito";
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+
+.todo-card-delete {
+  background: #ef3340 0% 0% no-repeat padding-box;
+}
+
+.todo-card-complete {
+  background: #56d4c2 0% 0% no-repeat padding-box;
+}
+
+.display-block {
+  display: block;
+}
+
+.display-none {
+  display: none;
+}
+
+.modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(213, 213, 213, 0.5);
+  z-index: 1;
+}
+
+.modal-box {
+  background-color: white;
+  width: 20%;
+  margin: 15% auto;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.09803921568627451);
+  font: normal normal 700 14px/43px "Nunito";
+}
+
+.modal-header {
+  border-bottom: 1px solid #cccccc;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.modal-header h2 {
+  margin: 0.5em;
+}
+
+.close {
+  margin: 0.2em 0.5em 0.2em 0.2em;
+  font-size: 2rem;
+  color: lightgray;
+}
+
+.close:hover {
+  color: gray;
+  cursor: pointer;
+}
+
+.modal-content {
+  margin: auto;
+  width: 75%;
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+
+.modal-content input {
+  width: 100%;
+  height: 2em;
+  margin-bottom: 1em;
+}
+
+.modal-content button {
+  width: 100%;
+  height: 2.5em;
+  margin: auto;
+  background-color: #56d4c2;
+  border-color: transparent;
+  color: white;
+  font-size: medium;
+  cursor: pointer;
+}
+
+.mLeft {
+  color: #959595;
+}
+
+.todo-history {
+  margin-top: 5em;
+  width: 70%;
+  margin: auto;
+  font: normal normal 700 14px/43px "Nunito";
+}
+
+.history-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.history-checkbox {
+  margin: 4em 2em 1em 0;
+  color: #909090;
+}
+
+.history-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.history-table th {
+  background-color: #e6e6e6;
+  color: #363636;
+  padding: 0.5em 1em;
+  text-align: left;
+  font-weight: bold;
+}
+
+.history-table td {
+  color: #8b8b8b;
+  padding: 1em 0 1em 1em;
+  border-bottom: 1px solid #818e94;
+}
